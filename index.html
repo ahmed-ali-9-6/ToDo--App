@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Todo app</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <img
+        class="bg-img img-light"
+        src="images/bg-desktop-light.jpg"
+        alt="background image"
+      />
+      <img
+        class="bg-img img-dark"
+        src="images/bg-desktop-dark.jpg"
+        alt="background image"
+      />
+      <img
+        class="bg-img img-light-mobile"
+        src="images/bg-mobile-light.jpg"
+        alt="background image for mobile"
+      />
+      <img
+        class="bg-img img-dark-mobile"
+        src="images/bg-mobile-dark.jpg"
+        alt="background image for mobile"
+      />
+      <div class="container">
+        <div class="app">
+          <header class="header">
+            <h1 class="main-heading">TODO</h1>
+            <button class="theme">
+              <span class="theme-icon light-icon"
+                ><img src="images/icon-sun.svg" alt="sun icon"
+              /></span>
+              <span class="theme-icon dark-icon"
+                ><img src="images/icon-moon.svg" alt="moon icon"
+              /></span>
+            </button>
+          </header>
+
+          <main>
+            <form class="form">
+              <div class="mark-icon"></div>
+              <input
+                class="input"
+                type="text"
+                placeholder="Create a new todo.."
+              />
+            </form>
+
+            <div class="todo-box">
+              <ul class="todo-list"></ul>
+
+              <div class="todo-btns">
+                <p class="left-tasks">
+                  <span class="number-tasks">0</span> items left
+                </p>
+                <div class="control-btns">
+                  <button class="all-btn">All</button>
+                  <button class="btn active-btn">Active</button>
+                  <button class="btn completed-btn">Completed</button>
+                </div>
+                <button class="btn clear-competed-btn">Clear Completed</button>
+              </div>
+            </div>
+          </main>
+          <footer class="footer"><p>Drag and drop to reorder list</p></footer>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
